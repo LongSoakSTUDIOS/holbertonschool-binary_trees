@@ -23,7 +23,7 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 		free(new_node);
 		return (NULL);
 	}
-		
+
 	if (parent->right != NULL)
 	{
 		tmp = parent->right;
