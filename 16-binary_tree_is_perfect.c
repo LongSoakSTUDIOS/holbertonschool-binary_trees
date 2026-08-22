@@ -43,7 +43,10 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	int depth;
 	int level = 0;
-
+	if (tree == NULL)
+	{
+		return (0);
+	}
 	depth = find_depth_left(tree);
 	return (isPerf(tree, depth, level));
 
